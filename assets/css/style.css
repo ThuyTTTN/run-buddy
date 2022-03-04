@@ -65,12 +65,14 @@ header nav ul li a{
     text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
-header nav, ul li a:hover {
+header nav ul li a:hover {
     background: var(--primary-color);
     color: var(--secondary-color);
     border-radius: 15px;
     text-shadow: none;
 }
+
+/* header nav bar end */
 
 footer{
     background: var(--primary-color);
@@ -95,6 +97,7 @@ footer div{
 footer a{
     color: var(--secondary-color);
 }
+/* end footer style */
 
 section{
     padding: 60px;
@@ -105,7 +108,8 @@ section{
     background-image: url("../images/hero-bg.jpg");
     background-size: cover;
     background-attachment: fixed;
-    background-position: 80%;    display: flex;
+    background-position: 80%;    
+    display: flex;
     justify-content: center;
     flex-wrap: wrap;
     align-items: flex-start;
@@ -137,6 +141,11 @@ section{
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
     border-radius: 15px;
 }
+
+.hero-form button:hover {
+    background-color: var(--tertiary-color);
+}
+
 .hero-form h3 {
     font-size: 24px;
     margin: 0;
@@ -174,10 +183,6 @@ section{
     padding: 10px 20px;
     font-size: 16px;
     border-radius: 15px;
-}
-
-.hero-form button:hover {
-    background-color: var(--tertiary-color);
 }
 
 .checkbox-wrapper input, .radio-wrapper input {
@@ -227,10 +232,7 @@ section{
     position: absolute;
     left: -26px;
     top: 1px;
-  }
-
-  .checkbox-wrapper label::after {
-      transform: rotate(-58deg);
+    transform: rotate(-58deg);
   }
 
   .checkbox-wrapper input + label::after, .radio-wrapper input + label::after {
@@ -243,20 +245,7 @@ section{
 
 /* Hero Style End */
 
-.intro p {
-    /* add this alongside your other declarations */
-    margin: 0 auto;
-    line-height: 1.7;
-    color: var(--tertiary-color);
-    width: 80%;
-    font-size: 20px;
-    text-align: center;
-}
-
-.steps {
-    background: var(--primary-color);
-}
-
+/* Section title start  */
 .section-title {
     font-size: 48px;
     color: var(--secondary-color);
@@ -274,11 +263,27 @@ section{
 .secondary-border {
     border-color: var(--tertiary-color);
 }
+/* Section title end */
+
+/* What we do style */
+.intro p {
+    /* add this alongside your other declarations */
+    margin: 0 auto;
+    line-height: 1.7;
+    color: var(--tertiary-color);
+    width: 80%;
+    font-size: 20px;
+    text-align: center;
+}
+
+/* What You do style */
+.steps {
+    background: var(--primary-color);
+}
 
 .step {
     margin: 50px auto;
     padding-bottom: 50px;
-    border-bottom: 1px solid var(--tertiary-color);
     width: 80%;
     display: flex;
     flex-wrap: wrap;
@@ -321,11 +326,14 @@ section{
     line-height: 1.5;
     color: var(--secondary-color);
 }
+
 .step-text p {
     color: var(--tertiary-color);
     font-size: 18px;
 }
+/* What you do style End */
 
+/* Meet the trainers Start */
 .trainers {
     width: 100%;
     margin: 0 auto;
@@ -343,20 +351,11 @@ section{
 
 .trainer img {
     width: 100%;
-    
 }
 
 .trainer-bio {
     padding: 25px;
     line-height: 1.3;
-}
-
-.text-left {
-    text-align: left;
-}
-
-.text-right {
-    text-align: right;
 }
 
 .trainer-bio h3 {
@@ -372,6 +371,7 @@ section{
 .trainer-bio p {
     font-size: 17px;
 }
+/* Trainer style End */
 
  /* Reach out styles start */
  .contact {
@@ -433,13 +433,13 @@ section{
 
 .contact-form button {
     width: 100%;
-    border; none;
+    border: none;
     background: var(--primary-color);
     color: var(--secondary-color);
     text-align: center;
     padding: 15px 0;
     font-size: 16px;
-    border-radius: 15px;
+    border-radius: 10px;
 }
 
 .contact-form button:hover {
@@ -452,6 +452,16 @@ section{
 }
 
 /*Reach out styles end*/
+
+/* Utilities */
+text-left { 
+    text-align: left;
+}
+
+.text-right {
+    text-align: right;
+} */
+
 
 .flex-row {
     display: flex;
@@ -520,6 +530,10 @@ section{
     .step-text {
         flex: 100%
     }
+
+    .trainer-bio h3, .trainer-bio h4 {
+        display: block;
+      }
 }
 
 /* MEDIA QUERY FOR MOBILE PHONES AND SMALLER */
